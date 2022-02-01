@@ -17,7 +17,7 @@ namespace scheduler
     {
         using TimePoint = std::chrono::time_point<std::chrono::system_clock>;
 
-        const std::string_view name;
+        std::string_view name;
 
         TimePoint created_at = std::chrono::system_clock::now();
         TimePoint end_point;
